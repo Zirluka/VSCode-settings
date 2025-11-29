@@ -27,18 +27,18 @@
 	//Управляет выделением символов, которые можно спутать с основными символами ASCII, кроме тех, которые являются общими для текущего пользовательского языкового стандарта.
 	"editor.unicodeHighlight.ambiguousCharacters": false,
 
-	"editor.quickSuggestionsDelay": 0,
-	"html.completion.attributeDefaultValue": "singlequotes",
+	"editor.quickSuggestionsDelay": 10,
+	"html.completion.attributeDefaultValue": "doublequotes",
 
 	//Appearance
-	"editor.bracketPairColorization.enabled": false,
+	"editor.bracketPairColorization.enabled": true,
 	"editor.glyphMargin": false,
 	"editor.scrollbar.horizontal": "hidden",
-	"editor.scrollbar.vertical": "visible",
+	"editor.scrollbar.vertical": "hidden",
 	"workbench.productIconTheme": "Default",
 	"window.density.editorTabHeight": "compact",
 	"workbench.activityBar.location": "top",
-	"workbench.colorTheme": "Best Themes - Dark Phoenix",
+	"workbench.colorTheme": "Best Themes - Shades of Purple (Super Dark)",
 	"editor.accessibilitySupport": "off",
 	"window.commandCenter": false,
 	"workbench.layoutControl.enabled": false,
@@ -90,12 +90,12 @@
 	},
 
 	//Terminal
-	"terminal.integrated.fontFamily": "Iosevka NFM",
-	"terminal.integrated.fontSize": 15,
+	"terminal.integrated.fontFamily": "JetBrainsMono Nerd Font Mono",
+	"terminal.integrated.fontSize": 16,
 	"terminal.integrated.tabs.enabled": false,
 	"terminal.integrated.cursorStyle": "line",
 	"terminal.integrated.cursorBlinking": true,
-	"terminal.integrated.defaultProfile.windows": "Command Prompt",
+	"terminal.integrated.defaultProfile.windows": "zsh",
 
 	//Explorer
 	"explorer.confirmDelete": false,
@@ -109,8 +109,8 @@
 	//Debug
 	"debug.toolBarLocation": "hidden",
 	"debug.focusWindowOnBreak": false,
-	"debug.showInlineBreakpointCandidates": false,
-	"debug.showBreakpointsInOverviewRuler": false,
+	"debug.showInlineBreakpointCandidates": true,
+	"debug.showBreakpointsInOverviewRuler": true,
 
 	// Emmet
 	"emmet.includeLanguages": {
@@ -123,15 +123,15 @@
 	"prettier.semi": false,
 	"prettier.useTabs": true,
 	"editor.formatOnSave": true,
-	"prettier.singleQuote": true,
-	"prettier.jsxSingleQuote": true,
+	"prettier.singleQuote": false,
+	"prettier.jsxSingleQuote": false,
 	"editor.codeActionsOnSave": {
 		"source.organizeImports": "explicit"
 	},
 	//Включите круглые скобки вокруг единственного параметра функции стрелки
 	"prettier.arrowParens": "avoid",
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
-	// "files.associations": { "*.scss": "postcss", "*.module.scss": "postcss" },
+	"files.associations": { "*.scss": "postcss", "*.module.scss": "postcss" },
 	"editor.inlineSuggest.enabled": true,
 
 	//Breadcrumbs
@@ -153,8 +153,8 @@
 	//JS & TS
 	"javascript.updateImportsOnFileMove.enabled": "always",
 	"typescript.updateImportsOnFileMove.enabled": "always",
-	"typescript.preferences.quoteStyle": "single",
-	"javascript.preferences.quoteStyle": "single",
+	"typescript.preferences.quoteStyle": "auto",
+	"javascript.preferences.quoteStyle": "auto",
 	"javascript.format.semicolons": "remove",
 	"typescript.format.semicolons": "remove",
 	// Использование экспериментальных декораторов в JS/TS
@@ -162,7 +162,7 @@
 
 	//Spell checker
 	"cSpell.language": "en,ru",
-	"cSpell.userWords": [],
+	"cSpell.userWords": ["рандомных", "endsection"],
 	"cSpell.enabled": true,
 
 	"editor.unicodeHighlight.allowedCharacters": {
@@ -199,7 +199,7 @@
 	"git.openRepositoryInParentFolders": "never",
 
 	// Поведение при обнаружении нескольких определений
-	"editor.gotoLocation.multipleDefinitions": "goto",
+	"editor.gotoLocation.multipleDefinitions": "peek",
 	// Скрыть подсказку в пустом редакторе
 	"workbench.editor.empty.hint": "hidden",
 	"files.autoSave": "afterDelay",
@@ -223,5 +223,14 @@
 	"update.enableWindowsBackgroundUpdates": false,
 	"extensions.autoUpdate": false,
 	"update.showReleaseNotes": true,
-	"update.mode": "manual"
+	"update.mode": "manual",
+	"liveServer.settings.donotShowInfoMsg": true,
+
+	// php
+	"php.validate.executablePath": "/usr/bin/php",
+	"[php]": {
+		"editor.defaultFormatter": "DEVSENSE.phptools-vscode"
+	},
+	"explorer.confirmPasteNative": false,
+	"cSpell.ignoreWords": ["Tymon", "enderror", "endsection", "laravel"]
 }
